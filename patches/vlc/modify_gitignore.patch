@@ -1,0 +1,16 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Lorne <15919917852@163.com>
+Date: Thu, 31 Aug 2023 01:13:55 +0800
+Subject: modify gitignore
+
+
+diff --git a/contrib/.gitignore b/contrib/.gitignore
+index 95e1a90ab9dae6c34678cfeb501f6777c21c342e..fb6f20395a8d706427362ab7e0bf958fa17b09cc 100644
+--- a/contrib/.gitignore
++++ b/contrib/.gitignore
+@@ -2,4 +2,5 @@ bin
+ python-venv
+ vlc-contrib-*.tar.xz
+ vlc-contrib-*.tar.bz2
++*.a
+ /*-*-*/
