@@ -25,6 +25,16 @@
 在vlc源码目录的上层目录（/Users/shilonglong/Desktop/git-test/git-submodule-test）下执行下面命令
 python ./script/apply_all_patches.py patches/config.json
 
+5、编辑补丁
+（1）对vlc已有补丁的相同文件进行了修改
+（2）git add . 添加更改
+（3）git commit --fixup “要编辑的补丁的git提交哈希”
+（4）git rebase --autosquash -i “要编辑的补丁的git提交哈希”
+（5）第四不执行完会进入vim，然后直接wq保存即可
+（6）../script/git-export-patches -o ../patches/vlc 即可更新补丁
+（7）然后进入git-submodule-test目录，提交修改后的补丁
+参考：https://www.electronjs.org/zh/docs/latest/development/patches#编辑现有补丁
+
 ## 四、注意：
 在重复使用./script/apply_all_patches.py时，如果报错，则可以设置环境变量
 export ELECTRON_USE_THREE_WAY_MERGE_FOR_PATCHES=1
