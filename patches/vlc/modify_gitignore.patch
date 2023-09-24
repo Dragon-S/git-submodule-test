@@ -4,13 +4,34 @@ Date: Thu, 31 Aug 2023 01:13:55 +0800
 Subject: modify gitignore
 
 
+diff --git a/.gitignore b/.gitignore
+index 6330f5b8b51f7cd22ce871eb780047d756ed61f4..9d0778a35d0cbbb787f6ecb15a4e1e54110174d4 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -48,6 +48,15 @@ wxvlc
+ vlc_install_dir/*
+ plugins.dat
+ patches/*
++Frameworks
++bin/Contents/
++bin/vlc-osx
++bin/vlc-osx-static
++macos-install/
++share/macosx/
++test/vlc-window
++modules/codec/webvtt/libwebvtt_plugin_la-CSSLexer.c
++modules/gui/macosx/Resources/Assets.car
+ 
+ # Ignore build dirs
+ build*/
 diff --git a/contrib/.gitignore b/contrib/.gitignore
-index 95e1a90ab9dae6c34678cfeb501f6777c21c342e..fb6f20395a8d706427362ab7e0bf958fa17b09cc 100644
+index 95e1a90ab9dae6c34678cfeb501f6777c21c342e..53fb58023c1e7dbb92ef054b43f0da2cd6676f4a 100644
 --- a/contrib/.gitignore
 +++ b/contrib/.gitignore
-@@ -2,4 +2,5 @@ bin
+@@ -2,4 +2,6 @@ bin
  python-venv
  vlc-contrib-*.tar.xz
  vlc-contrib-*.tar.bz2
 +*.a
++include
  /*-*-*/
