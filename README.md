@@ -22,7 +22,7 @@
 ../script/git-export-patches -o ../patches/vlc
 
 4、每次同步完成vlc官方代码后，应用patch
-在vlc源码目录的上层目录（/Users/shilonglong/Desktop/git-test/git-submodule-test）下执行下面命令
+在vlc源码目录的上层目录（/Users/user/Desktop/git-test/git-submodule-test）下执行下面命令
 python ./script/apply_all_patches.py patches/config.json
 
 5、编辑补丁
